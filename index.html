@@ -15,7 +15,7 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #0131a3;
             font-family: Arial, sans-serif;
         }
         .container {
@@ -29,6 +29,13 @@
             height: 100%;
             border: none;
             display: block;
+            animation: none !important;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
         }
         @media (max-width: 768px) {
             .container {
